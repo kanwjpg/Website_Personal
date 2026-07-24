@@ -1,11 +1,11 @@
 {
     "version": 2,
-    "name": "air-quality-dashboard",
+    "name": "Website_Personal",
     "cleanUrls": true,
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html"
+            "destination": "/index(2).html"
         }
     ]
 }
