@@ -22,6 +22,14 @@ contact and banner scenes (cards, rocket, orbiting toolkit, star).
 - Scenes spring into place as they scroll into view.
 - Easter egg: the Konami code (↑ ↑ ↓ ↓ ← → ← → B A) or typing "kanawa".
 
+## Motion
+
+Buttons and cards spring up on hover and squish when pressed, the About stickers can be
+dragged and thrown (they spring back home), and scroll reveals also wait for the viewport
+in browsers without CSS scroll timelines. The Work page's project cards spring in with
+framer-motion itself (bundled into that page from node_modules; run `npm install` before
+rebuilding).
+
 On devices without WebGL, or with "reduce motion" switched on, the page falls back to the
 original flat design or a still 3D frame.
 
@@ -43,4 +51,5 @@ The pages here are built from `source/` in the project folder:
 
     source/pages/<page>.html   page markup, CSS and page scripts
     source/k3d.js              the 3D renderer and every 3D scene
+    source/kmotion.js          Motion-style springs: hover/tap, scroll reveals, draggable stickers
     source/build.py            rebuilds these six files: python source/build.py
